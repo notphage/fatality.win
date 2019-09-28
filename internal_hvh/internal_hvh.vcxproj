@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{D1F5161A-D2FA-4BAB-9D72-F167448AA9C1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>internalhvh</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>J:\dank_hacks kek\internal_hvh\fatality_gui;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX sdk %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\Philip\source\repos\internal_hvh\fatality_gui;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX sdk %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <TargetName>fatality</TargetName>
+    <GenerateManifest>false</GenerateManifest>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/GR-</AdditionalOptions>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ProgramDataBaseFileName />
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>call C:\Users\Philip\source\repos\internal_hvh\Release\obfuscate_dll.bat</Command>
+    </PostBuildEvent>
+    <Xdcmake>
+      <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
+    </Xdcmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\fatality_gui\menu\config\config.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\button.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\checkbox.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\colorpicker.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\combobox.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\control.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\keybind.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\listbox.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\multi-selectable.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\slider.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\subtab.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\tab.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\textbox.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\controls\window.cpp" />
+    <ClCompile Include="..\fatality_gui\menu\menu.cpp" />
+    <ClCompile Include="DLLMain.cpp" />
+    <ClCompile Include="features\aimbot.cpp" />
+    <ClCompile Include="features\animations.cpp" />
+    <ClCompile Include="features\antiaim.cpp" />
+    <ClCompile Include="features\autostrafer.cpp" />
+    <ClCompile Include="features\beams.cpp" />
+    <ClCompile Include="features\bone_setup.cpp" />
+    <ClCompile Include="features\chams.cpp" />
+    <ClCompile Include="features\console_log.cpp" />
+    <ClCompile Include="features\fake_ping.cpp" />
+    <ClCompile Include="features\freestanding.cpp" />
+    <ClCompile Include="features\glow.cpp" />
+    <ClCompile Include="features\hitmarker.cpp" />
+    <ClCompile Include="features\inventorychanger.cpp" />
+    <ClCompile Include="features\lag_compensation.cpp" />
+    <ClCompile Include="features\misc.cpp" />
+    <ClCompile Include="features\player_log.cpp" />
+    <ClCompile Include="features\prediction.cpp" />
+    <ClCompile Include="features\resolver.cpp" />
+    <ClCompile Include="features\skinchanger.cpp" />
+    <ClCompile Include="features\thirdperson.cpp" />
+    <ClCompile Include="features\visuals.cpp" />
+    <ClCompile Include="features\wall_penetration.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="hooks\create_move.cpp" />
+    <ClCompile Include="hooks\do_extra_bone_processing.cpp" />
+    <ClCompile Include="hooks\do_post_screen_space_effects.cpp" />
+    <ClCompile Include="hooks\draw_model_execute.cpp" />
+    <ClCompile Include="hooks\emit_sound.cpp" />
+    <ClCompile Include="hooks\eye_angles.cpp" />
+    <ClCompile Include="hooks\fire_bullets.cpp" />
+    <ClCompile Include="hooks\frame_stage_notify.cpp" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="hooks\is_box_visible.cpp" />
+    <ClCompile Include="hooks\is_connected.cpp" />
+    <ClCompile Include="hooks\is_hltv.cpp" />
+    <ClCompile Include="hooks\m_angEyeAngles0Proxy.cpp" />
+    <ClCompile Include="hooks\m_angEyeAngles1Proxy.cpp" />
+    <ClCompile Include="hooks\m_angRotationProxy.cpp" />
+    <ClCompile Include="hooks\m_flLowerBodyYawTargetProxy.cpp" />
+    <ClCompile Include="hooks\override_view.cpp" />
+    <ClCompile Include="hooks\paint_traverse.cpp" />
+    <ClCompile Include="hooks\play_sound.cpp" />
+    <ClCompile Include="hooks\present.cpp" />
+    <ClCompile Include="hooks\process_input.cpp" />
+    <ClCompile Include="hooks\render_view.cpp" />
+    <ClCompile Include="hooks\reset.cpp" />
+    <ClCompile Include="hooks\scene_end.cpp" />
+    <ClCompile Include="hooks\send_datagram.cpp" />
+    <ClCompile Include="hooks\sequence.cpp" />
+    <ClCompile Include="hooks\smoke_effect.cpp" />
+    <ClCompile Include="hooks\con_vars.cpp" />
+    <ClCompile Include="hooks\temp_entities.cpp" />
+    <ClCompile Include="hooks\trace_ray.cpp" />
+    <ClCompile Include="hooks\wnd_proc.cpp" />
+    <ClCompile Include="misc\d3dfont.cpp" />
+    <ClCompile Include="misc\init.cpp" />
+    <ClCompile Include="misc\listeners.cpp" />
+    <ClCompile Include="misc\math.cpp" />
+    <ClCompile Include="misc\netvars.cpp" />
+    <ClCompile Include="misc\offsets.cpp" />
+    <ClCompile Include="misc\render.cpp" />
+    <ClCompile Include="misc\util.cpp" />
+    <ClCompile Include="sdk\CEconItem.cpp" />
+    <ClCompile Include="sdk\checksum_md5.cpp" />
+    <ClCompile Include="sdk\CPlayerInventory.cpp" />
+    <ClCompile Include="sdk\entity_classes.cpp" />
+    <ClCompile Include="sdk\interfaces\CGlowObjectManager.cpp" />
+    <ClCompile Include="sdk\interfaces\interfaces.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\fatality_gui\menu\config\config.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\button.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\checkbox.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\colorpicker.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\combobox.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\control.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\keybind.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\listbox.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\multi-selectable.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\slider.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\subtab.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\tab.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\textbox.h" />
+    <ClInclude Include="..\fatality_gui\menu\controls\window.h" />
+    <ClInclude Include="..\fatality_gui\menu\include_menu.h" />
+    <ClInclude Include="..\fatality_gui\menu\menu.h" />
+    <ClInclude Include="cthash.h" />
+    <ClInclude Include="features\aimbot.h" />
+    <ClInclude Include="features\animations.h" />
+    <ClInclude Include="features\antiaim.h" />
+    <ClInclude Include="features\autostrafer.h" />
+    <ClInclude Include="features\beams.h" />
+    <ClInclude Include="features\bone_setup.h" />
+    <ClInclude Include="features\chams.h" />
+    <ClInclude Include="features\console_log.h" />
+    <ClInclude Include="features\fake_ping.h" />
+    <ClInclude Include="features\freestanding.h" />
+    <ClInclude Include="features\glow.h" />
+    <ClInclude Include="features\hitmarker.h" />
+    <ClInclude Include="features\inventorychanger.h" />
+    <ClInclude Include="features\lag_compensation.h" />
+    <ClInclude Include="features\misc.h" />
+    <ClInclude Include="features\player_log.h" />
+    <ClInclude Include="features\prediction.h" />
+    <ClInclude Include="features\include_features.h" />
+    <ClInclude Include="features\resolver.h" />
+    <ClInclude Include="features\skinchanger.h" />
+    <ClInclude Include="features\structs.h" />
+    <ClInclude Include="features\thirdperson.h" />
+    <ClInclude Include="features\visuals.h" />
+    <ClInclude Include="features\wall_penetration.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="hooks\hooks.h" />
+    <ClInclude Include="includes.h" />
+    <ClInclude Include="include_cheat.h" />
+    <ClInclude Include="misc\d3dfont.h" />
+    <ClInclude Include="misc\datamap.h" />
+    <ClInclude Include="misc\hitsounds.h" />
+    <ClInclude Include="misc\init.h" />
+    <ClInclude Include="misc\listeners.h" />
+    <ClInclude Include="misc\math.h" />
+    <ClInclude Include="misc\netvars.h" />
+    <ClInclude Include="misc\offsets.h" />
+    <ClInclude Include="misc\recv_prop_hook.h" />
+    <ClInclude Include="misc\render.h" />
+    <ClInclude Include="misc\tinyformat.h" />
+    <ClInclude Include="misc\util.h" />
+    <ClInclude Include="misc\hybrid_hook.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sdk\CBoneChache.h" />
+    <ClInclude Include="sdk\CCSGameRulesProxy.h" />
+    <ClInclude Include="sdk\CCSGOPlayerAnimState.h" />
+    <ClInclude Include="sdk\CEconItem.h" />
+    <ClInclude Include="sdk\checksum_md5.h" />
+    <ClInclude Include="sdk\ClientClass.h" />
+    <ClInclude Include="sdk\CNetChannel.h" />
+    <ClInclude Include="sdk\ConVar.h" />
+    <ClInclude Include="sdk\CPlayerInventory.h" />
+    <ClInclude Include="sdk\datatypes\Color.h" />
+    <ClInclude Include="sdk\datatypes\CUtlVector.h" />
+    <ClInclude Include="sdk\datatypes\matrix3x4_t.h" />
+    <ClInclude Include="sdk\datatypes\QAngle.h" />
+    <ClInclude Include="sdk\datatypes\Vector.h" />
+    <ClInclude Include="sdk\datatypes\Vector2D.h" />
+    <ClInclude Include="sdk\datatypes\Vector4D.h" />
+    <ClInclude Include="sdk\datatypes\VMatrix.h" />
+    <ClInclude Include="sdk\defines.h" />
+    <ClInclude Include="sdk\entity_classes.h" />
+    <ClInclude Include="sdk\IClientEntity.h" />
+    <ClInclude Include="sdk\IMaterial.h" />
+    <ClInclude Include="sdk\IMaterialVar.h" />
+    <ClInclude Include="sdk\include_sdk.h" />
+    <ClInclude Include="sdk\INetChannelInfo.h" />
+    <ClInclude Include="sdk\interfaces\CGlowObjectManager.h" />
+    <ClInclude Include="sdk\interfaces\CHud.h" />
+    <ClInclude Include="sdk\interfaces\IBaseClientDll.h" />
+    <ClInclude Include="sdk\interfaces\IClientEntityList.h" />
+    <ClInclude Include="sdk\interfaces\IClientModeShared.h" />
+    <ClInclude Include="sdk\interfaces\IClientState.h" />
+    <ClInclude Include="sdk\interfaces\ICVar.h" />
+    <ClInclude Include="sdk\interfaces\IEngineClient.h" />
+    <ClInclude Include="sdk\interfaces\IEngineTrace.h" />
+    <ClInclude Include="sdk\interfaces\IGameEventManager.h" />
+    <ClInclude Include="sdk\interfaces\CSPlayerResource.h" />
+    <ClInclude Include="sdk\interfaces\IGlobalVarsBase.h" />
+    <ClInclude Include="sdk\interfaces\IInput.h" />
+    <ClInclude Include="sdk\interfaces\ILocalize.h" />
+    <ClInclude Include="sdk\interfaces\IMaterialSystem.h" />
+    <ClInclude Include="sdk\interfaces\IMatRenderContext.h" />
+    <ClInclude Include="sdk\interfaces\IMemAlloc.h" />
+    <ClInclude Include="sdk\interfaces\IMoveHelper.h" />
+    <ClInclude Include="sdk\interfaces\interfaces.h" />
+    <ClInclude Include="sdk\interfaces\IPhysicsSurfaceProps.h" />
+    <ClInclude Include="sdk\interfaces\IPrediction.h" />
+    <ClInclude Include="sdk\interfaces\ISurface.h" />
+    <ClInclude Include="sdk\interfaces\IVDebugOverlay.h" />
+    <ClInclude Include="sdk\interfaces\IViewRender.h" />
+    <ClInclude Include="sdk\interfaces\IViewRenderBeams.h" />
+    <ClInclude Include="sdk\interfaces\IVModelInfo.h" />
+    <ClInclude Include="sdk\interfaces\IVModelRender.h" />
+    <ClInclude Include="sdk\interfaces\IVPanel.h" />
+    <ClInclude Include="sdk\interfaces\IVRenderView.h" />
+    <ClInclude Include="sdk\interfaces\IWeaponSystem.h" />
+    <ClInclude Include="sdk\IRefCounted.h" />
+    <ClInclude Include="sdk\misc.h" />
+    <ClInclude Include="sdk\structs.h" />
+    <ClInclude Include="sdk\trace_ray.h" />
+    <ClInclude Include="singleton.h" />
+    <ClInclude Include="threadsafe_deque.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="internal_hvh.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="smallest_pixel-7.ttf">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+    </Font>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

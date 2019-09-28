@@ -1,0 +1,32 @@
+#pragma once
+
+#include "defines.h"
+#include "datatypes/Vector.h"
+#include "datatypes/QAngle.h"
+#include "datatypes/matrix3x4_t.h"
+#include "datatypes/VMatrix.h"
+#include "datatypes/Color.h"
+#include "datatypes/CUtlVector.h"
+#include "datatypes/Vector2D.h"
+#include "datatypes/Vector4D.h"
+
+#include "misc.h"
+#include "structs.h"
+#include "ClientClass.h"
+#include "IClientEntity.h"
+#include "entity_classes.h"
+#include "IRefCounted.h"
+#include "IMaterial.h"
+#include "IMaterialVar.h"
+#include "ConVar.h"
+#include "trace_ray.h"
+#include "CCSGOPlayerAnimState.h"
+#include "INetChannelInfo.h"
+#include "CBoneChache.h"
+#include "CNetChannel.h"
+#include "CCSGameRulesProxy.h"
+#include "CPlayerInventory.h"
+#include "CEconItem.h"
+
+#include "interfaces/interfaces.h"
+
